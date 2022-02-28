@@ -10,6 +10,7 @@ import (
 	"github.com/okta/okta-sdk-golang/v2/okta"
 )
 
+# validScopes is a list of supported scopes as per https://developer.okta.com/docs/guides/implement-oauth-for-okta/scopes/.
 var validScopes = []string{
 	"okta.apps.manage", "okta.apps.read",
 	"okta.authorizationServers.manage", "okta.authorizationServers.read",
@@ -29,6 +30,7 @@ var validScopes = []string{
 	"okta.trustedOrigins.manage", "okta.trustedOrigins.read",
 	"okta.users.manage", "okta.users.read", "okta.users.manage.self", "okta.users.read.self",
 	"okta.policies.manage", "okta.policies.read",
+	"okta.profileMappings.manage", "okta.profileMappings.read",
 }
 
 func resourceAppOAuthAPIScope() *schema.Resource {
